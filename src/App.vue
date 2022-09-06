@@ -1,22 +1,46 @@
 <template>
-  <nav>
+
+  <!-- <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
   </nav>
-  <router-view/>
+  <router-view/> -->
+
+  <!-- <Nav /> -->
+  <!-- <Search /> -->
+  <!-- <Groups/> -->
+  <Recents/>
+  
 </template>
 
+<script>
+import Nav from '@/components/Nav'
+import Search from './components/Search.vue';
+import Groups from './components/Groups.vue';
+import Recents from './components/Recents.vue';
+
+export default {
+  components: {
+    Nav,
+    Search,
+    Groups,
+    Recents
+  }
+}
+
+</script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  
+* {
+  font-family: "Poppins";
+}
+
+body {
+  background-color: #eee;
 }
 
 nav {
-  padding: 30px;
+  // padding: 30px;
 
   a {
     font-weight: bold;
@@ -27,4 +51,6 @@ nav {
     }
   }
 }
+
+
 </style>
